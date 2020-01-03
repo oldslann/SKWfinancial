@@ -13,13 +13,14 @@
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="124dp"
-        android:text="输入用户名"
+        android:inputType="number"
+        android:text="输入用户名(账号)"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/inusrname"
         android:layout_width="191dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -43,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inname" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/inp1"
         android:layout_width="191dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -52,7 +53,7 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toEndOf="@+id/inpf"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/inusrname" />
 
     <TextView
         android:id="@+id/ips"
@@ -67,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inpf" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/inp2"
         android:layout_width="191dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -76,10 +77,10 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toEndOf="@+id/ips"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/inp1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signin"
         android:layout_width="109dp"
         android:layout_height="60dp"
         android:layout_marginTop="400dp"

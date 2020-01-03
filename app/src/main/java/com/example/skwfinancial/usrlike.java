@@ -13,7 +13,7 @@ public class usrlike extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usrlike);
-        ImageButton btn1=findViewById(R.id.usrlicaib);
+        ImageButton btn1=findViewById(R.id.likelicai);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

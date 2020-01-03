@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".likelicai"></activity>
+        <activity android:name=".buypage"></activity>
+        <activity android:name=".productpage" />
+        <activity android:name=".Licai" />
+        <activity android:name=".sysiof" />
+        <activity android:name=".likelicai" />
         <activity android:name=".usrlike" />
         <activity android:name=".UsrLicai" />
         <activity android:name=".usrproduct" />

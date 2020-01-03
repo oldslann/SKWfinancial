@@ -122,9 +122,11 @@ public class tableact extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item) {//左拉框
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -138,7 +140,7 @@ public class tableact extends AppCompatActivity
             usrl();
 
         } else if (id == R.id.nav_tools) {
-            waitingF();
+            sysiofm();
 
         }
 
@@ -148,41 +150,63 @@ public class tableact extends AppCompatActivity
     }
 
 
-
-    public void fabc()//新闻列表
-    {
+    //新闻列表
+    public void fabc(){
         Intent intent=new Intent(this,News.class);
         startActivity(intent);
     }
 
 
+    //理财
+    public void licai(){
+        Intent intent=new Intent(this,Licai.class);
+        startActivity(intent);
 
-    public void waihui(){//外汇
+    }
+
+    //外汇
+    public void waihui(){
         Intent intent=new Intent(this,waihui.class);
         startActivity(intent);
 
     }
 
-    public void waitingF(){//未做完页面
+
+    //未做完页面
+    public void waitingF(){
         Intent intent=new Intent(this,WaitingF.class);
         startActivity(intent);
 
     }
 
-    public void ueriof(){//打开用户信息
+
+    //打开用户信息
+    public void ueriof(){
         Intent intent=new Intent(this,UserInf.class);
         startActivity(intent);
 
     }
 
-    public void usrpro(){//打开用户订单
+
+    //打开用户订单
+    public void usrpro(){
         Intent intent=new Intent(this,usrproduct.class);
         startActivity(intent);
 
     }
 
-    public void usrl(){//打开用户订单
+
+    //打开用户收藏
+    public void usrl(){
         Intent intent=new Intent(this,usrlike.class);
+        startActivity(intent);
+
+    }
+
+
+    //打开系统信息
+    public void sysiofm(){
+        Intent intent=new Intent(this,sysiof.class);
         startActivity(intent);
 
     }
