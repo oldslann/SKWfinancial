@@ -9,10 +9,12 @@ import android.widget.ImageButton;
 
 public class usrproduct extends AppCompatActivity {
 
+    Bundle bundle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usrproduct);
+        bundle=getIntent().getExtras();
 
         ImageButton btn1=findViewById(R.id.usrlicaib);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +29,7 @@ public class usrproduct extends AppCompatActivity {
 
     public void ustlicai(){//打开用户理财产品订单
         Intent intent=new Intent(this,UsrLicai.class);
+        intent.putExtras(bundle);
         startActivity(intent);
 
     }

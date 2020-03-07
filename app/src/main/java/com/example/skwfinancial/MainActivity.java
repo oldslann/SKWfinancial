@@ -137,9 +137,14 @@ public class MainActivity extends AppCompatActivity {
             //保存数据
             if(result.equals("1")){
                 Toast.makeText(getApplicationContext(),"登陆成功",Toast.LENGTH_SHORT).show();
-                Log.i(TAG, "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" );
+                //Log.i(TAG, "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" );
 
                 Intent intent=new Intent(MainActivity.this,tableact.class);
+                EditText t1=(EditText)findViewById(R.id.usrname);
+                String id=t1.getText().toString().trim();
+                Bundle bundle = new Bundle();           //为bundle分配
+                bundle.putString("id",id);
+                intent.putExtras(bundle);
                 startActivity(intent);
                 MainActivity.this.finish();
                 return;
@@ -147,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
             else{
 
                 Toast.makeText(getApplicationContext(),"登陆失败,账号或密码有误",Toast.LENGTH_SHORT).show();
-                Log.i(TAG, "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" );
+                //Log.i(TAG, "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" );
                 return;
 
             }

@@ -11,24 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".buypage"></activity>
-        <activity android:name=".productpage" />
-        <activity android:name=".Licai" />
+        <activity android:name=".BPLPage" android:label="订单详情"></activity>
+        <activity android:name=".buypage" android:label="购买" />
+        <activity android:name=".productpage"  android:label="产品详情" />
+        <activity android:name=".Licai" android:label="理财产品"/>
         <activity android:name=".sysiof" />
-        <activity android:name=".likelicai" />
-        <activity android:name=".usrlike" />
-        <activity android:name=".UsrLicai" />
-        <activity android:name=".usrproduct" />
-        <activity android:name=".ChangeIof" />
-        <activity android:name=".ChangePs" />
-        <activity android:name=".UserInf" />
+        <activity android:name=".likelicai" android:label="理财产品收藏"/>
+        <activity android:name=".usrlike" android:label="收藏列表"/>
+        <activity android:name=".UsrLicai" android:label="理财产品订单"/>
+        <activity android:name=".usrproduct" android:label="产品订单"/>
+        <activity android:name=".ChangeIof" android:label="更改个人信息"/>
+        <activity android:name=".ChangePs" android:label="更改密码"/>
+        <activity android:name=".UserInf" android:label="用户信息"/>
         <activity android:name=".WaitingF" />
-        <activity android:name=".waihui" />
+        <activity android:name=".waihui" android:label="外汇列表"/>
         <activity android:name=".webc" />
-        <activity android:name=".News" />
+        <activity android:name=".News" android:label="财经新闻"/>
         <activity
             android:name=".tableact"
-            android:label="@string/title_activity_tableact"
+            android:label="主界面"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".signact" />
         <activity android:name=".MainActivity">

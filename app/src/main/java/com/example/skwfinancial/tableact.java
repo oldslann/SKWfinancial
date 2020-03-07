@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.util.Log;
 import android.view.View;
 
 import androidx.core.view.GravityCompat;
@@ -25,18 +26,23 @@ import android.widget.ImageButton;
 
 public class tableact extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private  static String TAG="MAIN";
+    Bundle bundle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tableact);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        bundle=getIntent().getExtras();    //接收Extras
+        String id=bundle.getString("id");
+        Log.i(TAG, id+"wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" );
 
         ImageButton btn1=findViewById(R.id.licai);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                licai();
 
             }
         });
@@ -160,6 +166,7 @@ public class tableact extends AppCompatActivity
     //理财
     public void licai(){
         Intent intent=new Intent(this,Licai.class);
+        intent.putExtras(bundle);
         startActivity(intent);
 
     }
@@ -183,6 +190,7 @@ public class tableact extends AppCompatActivity
     //打开用户信息
     public void ueriof(){
         Intent intent=new Intent(this,UserInf.class);
+        intent.putExtras(bundle);
         startActivity(intent);
 
     }
@@ -191,6 +199,7 @@ public class tableact extends AppCompatActivity
     //打开用户订单
     public void usrpro(){
         Intent intent=new Intent(this,usrproduct.class);
+        intent.putExtras(bundle);
         startActivity(intent);
 
     }
@@ -199,6 +208,7 @@ public class tableact extends AppCompatActivity
     //打开用户收藏
     public void usrl(){
         Intent intent=new Intent(this,usrlike.class);
+        intent.putExtras(bundle);
         startActivity(intent);
 
     }
